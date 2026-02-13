@@ -1,1 +1,17 @@
-Con una neurona se devuelven dos estados
+Con una neurona se devuelven dos estados/clases
+
+si son mas de dos clases, la cantidad de neuronas sera equivalente a la cantidad de clases
+
+cuando usar un perceptrón? cuando los datos son linealmente separables
+
+perceptron es cuando es solo una sola neurona
+
+multilayer perceptrones cuando son mas de una neurona
+
+se genera una semilla para que no sea tan aleatorio
+
+Z es la sumatoria de w1*x1 + w2*x2 + b
+
+STEP-> funcion de activacion de escalado
+
+los pesos se optimizan ajustandolos, 

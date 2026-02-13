@@ -1,0 +1,1 @@
+Con una neurona se devuelven dos estados

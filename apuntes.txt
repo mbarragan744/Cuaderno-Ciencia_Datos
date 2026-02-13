@@ -14,4 +14,8 @@ Z es la sumatoria de w1*x1 + w2*x2 + b
 
 STEP-> funcion de activacion de escalado
 
-los pesos se optimizan ajustandolos, 
+los pesos se optimizan ajustandolos
+
+el punto optimo es cuando la pendiente es igual a cero
+
+se eleva al cuadrado para castigar que los errores salgan muy grandes

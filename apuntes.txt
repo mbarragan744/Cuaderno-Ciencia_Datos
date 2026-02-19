@@ -29,3 +29,9 @@ si se va a utilizar colab, no se debe trabajar con el environment
 en el READMY escribir las versiones de las librerias que se usaron
 
 usasr kuda 12 o 13, no menos de eso
+
+a la salida 3 tres neuronas: multiclase. 
+tener dos neuronas a la salida seran dos clases
+nunca se va a tener dos salidas con dos neuronas
+
+investigacion en TensorFlow para cuando se necesite estar mas actualizado

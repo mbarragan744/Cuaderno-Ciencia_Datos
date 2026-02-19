@@ -19,3 +19,13 @@ los pesos se optimizan ajustandolos
 el punto optimo es cuando la pendiente es igual a cero
 
 se eleva al cuadrado para castigar que los errores salgan muy grandes
+
+de preferencia usar python 3.12
+
+dejar descargado TensorFlow para evitar importar tantas librerias, tener en cuenta que descarga la ultima version de numpy, pero se debe trabajar con unas versiones anteriores. Pero recordar verificar que es lo que está descargando
+
+si se va a utilizar colab, no se debe trabajar con el environment 
+
+en el READMY escribir las versiones de las librerias que se usaron
+
+usasr kuda 12 o 13, no menos de eso

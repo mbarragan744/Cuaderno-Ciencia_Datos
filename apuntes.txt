@@ -8,7 +8,7 @@ perceptron es cuando es solo una sola neurona
 
 multilayer perceptrones cuando son mas de una neurona
 
-se genera una semilla para que no sea tan aleatorio
+se genera una semilla para que no sea tan aleatorio y para que el peso y el bias sea igual para todos
 
 Z es la sumatoria de w1*x1 + w2*x2 + b
 
@@ -35,3 +35,5 @@ tener dos neuronas a la salida seran dos clases
 nunca se va a tener dos salidas con dos neuronas
 
 investigacion en TensorFlow para cuando se necesite estar mas actualizado
+
+modelos  estilados: optimiza el numero de parametros

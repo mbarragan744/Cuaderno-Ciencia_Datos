@@ -37,3 +37,6 @@ nunca se va a tener dos salidas con dos neuronas
 investigacion en TensorFlow para cuando se necesite estar mas actualizado
 
 modelos  estilados: optimiza el numero de parametros
+
+
+si va a hacer a la salida de las capas lineal no utilice lineal en la capas ocultas porque el resultado va a hacer el mismo

@@ -40,3 +40,21 @@ modelos  estilados: optimiza el numero de parametros
 
 
 si va a hacer a la salida de las capas lineal no utilice lineal en la capas ocultas porque el resultado va a hacer el mismo
+
+
+crear un cuaderno de jupyter nuevo, conectarlo a colab
+en la primera fila agregar un texto (hiperparametros)
+arquitectura: 
+dos capas (64 y 32)
+la ultima capa debe tener 10
+
+utilizacion de optimizador adam, learning rate: 0.03
+epocas: 15-20
+utilizar la funcion de perdida: SparseCategoricalCrossentropy(from_logits=True)
+parametro: dado que es clasificacion, se utilizará accuracy (exactitud)
+
+importar librerias de numpy, pandas, matplotlib ,tensorflow, keras, etc.
+pasos obligatorios:
+- verificacion de versiones, imprimir las de python, keras y TensorFlow.
+
+colab: beginner_es

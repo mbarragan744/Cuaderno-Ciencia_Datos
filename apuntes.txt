@@ -1,39 +1,47 @@
-Con una neurona se devuelven dos estados/clases
+import tensorflow as tf
+from tensorflow.keras import layers
+model = tf.keras.Sequential(
+    [layer.Input(shape=(32)),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
 
-si son mas de dos clases, la cantidad de neuronas sera equivalente a la cantidad de clases
+model.compile( optimizer = 'adam', loss = 'sparse_categorical_crossentropy', metrics = ['accuracy']
 
-cuando usar un perceptrón? cuando los datos son linealmente separables
+model.fit(x_train, y_train, epochs = 10, batch_size = 32))
 
-perceptron es cuando es solo una sola neurona
+-----------------------------------------------------------------------------------------------------------
 
-multilayer perceptrones cuando son mas de una neurona
 
-se genera una semilla para que no sea tan aleatorio y para que el peso y el bias sea igual para todos
+accuracy para clasificacion y error medio cuadratico cuando es para regresión
 
-Z es la sumatoria de w1*x1 + w2*x2 + b
+en los cuadernos esta todo, el parcial es el jueves 2 de abril
 
-STEP-> funcion de activacion de escalado
 
-los pesos se optimizan ajustandolos
+donde pongo/declaran las funciones de activacion? en cada capa y se ejecutan en cada neurona
 
-el punto optimo es cuando la pendiente es igual a cero
+prestar atencion al sigmoid, su salida va a estar entre 0 y 1, tanh esta entre -1 y 1, y ambos se utilizan para clasificacion
 
-se eleva al cuadrado para castigar que los errores salgan muy grandes
+sigmoid-> cuando es por encima de 0.5 es igual a 1, cuando es por debajo de 0.5 entonces es 0. Se convirtió en una probabilidad
 
-de preferencia usar python 3.12
+tanh-> si es -0.9 es resultado es 0, los resultados solo pueden ser 0 o 1
 
-dejar descargado TensorFlow para evitar importar tantas librerias, tener en cuenta que descarga la ultima version de numpy, pero se debe trabajar con unas versiones anteriores. Pero recordar verificar que es lo que está descargando
+relu-> normalmente se utiliza en las capas intermedias, si se utiliza en la capa final, el valor del numero que va a predecir es numerico entero. Todo menor que 0 es 0, y por encima de 0 es lineal.
 
-si se va a utilizar colab, no se debe trabajar con el environment 
+binomial se utiliza sigmoid
+normalmente se utiliza relu
 
-en el READMY escribir las versiones de las librerias que se usaron
+cuando los datos estan centrados en cero? cuando es normalizado con standarScaler
 
-usasr kuda 12 o 13, no menos de eso
+las salidas pueden ser binomiales o multiclases. si no es ninguna de las dos entonces es regresion
 
-a la salida 3 tres neuronas: multiclase. 
-tener dos neuronas a la salida seran dos clases
-nunca se va a tener dos salidas con dos neuronas
+la perdida tiende a ser 0, la metrica tiende a ser 1 (accuracy)
 
-investigacion en TensorFlow para cuando se necesite estar mas actualizado
+regresion-> MSE
 
-modelos  estilados: optimiza el numero de parametros
+clasificacion binaria-> crossentropy
+
+si no tiene a la salida funcion de activacion, es lineal. especificar eso a la IA
+
+
